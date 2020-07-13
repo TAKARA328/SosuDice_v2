@@ -1,0 +1,54 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "summary": "素数サイコロは６つの素数を使った不思議なサイコロです。",
+          "examplePhrases": [
+            "アレクサ、素数サイコロを起動して",
+            "アレクサ、素数サイコロを開いて",
+            "アレクサ、素数サイコロをスタートして"
+          ],
+          "keywords": [
+            "Dice",
+            "サイコロ",
+            "素数",
+            "prime",
+            "number"
+          ],
+          "name": "素数サイコロ",
+          "description": "【概要】\n素数サイコロは２、３、５、７、１１、１３の６個の素数を使った不思議なサイコロです。\n\n【使用方法】\nサイコロふって：スキルが６個の素数の中からランダムに素数を選択しお伝えします。\nちょっと待って：３秒待ちます。\nヘルプ：スキルの使い方を説明します。",
+          "smallIconUri": "file://assets/images/ja-JP_smallIconUri.png",
+          "updatesDescription": "Invocable(Storyline)からAWS Lambdaに移植しました。\n「ちょっと待って」で３秒待つようにしました。",
+          "largeIconUri": "file://assets/images/ja-JP_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Storylineからlambdaに移植しました。\n\n\nAlexaから「サイコロを振りますか？」の問いに対して、\n「サイコロふって」「ふって」「はい」「ヘルプ」と返答してください。\n「ちょっとまって」で３秒待ちます。\n「おわり」でスキルを終了します。",
+      "category": "GAMES",
+      "distributionCountries": [
+        "JP"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:023972248338:function:ask-custom-SosuDice-default"
+        },
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

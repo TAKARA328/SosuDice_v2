@@ -1,0 +1,6 @@
+lambda/lambdacustom/node_modules/
+.ask/lambda/
+package-lock.json
+ask-states_bkup.json
+.DS_Store
+ask-custom-SosuDice-default-6856f35a-304f-4c5a-bc32-a15e0446c87e.zip
